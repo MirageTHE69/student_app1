@@ -11,12 +11,35 @@
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
-            android:id="@+id/action_home_page_to_student_login"
-            app:destination="@id/student_login" />
+            android:id="@+id/action_home_page_to_register_page"
+            app:destination="@id/register_page" />
     </fragment>
     <fragment
-        android:id="@+id/student_login"
+        android:id="@+id/register_page"
         android:name="com.example.tourapp.student_login"
-        android:label="fragment_student_login"
-        tools:layout="@layout/fragment_student_login" />
+        android:label="fragment_Register_page"
+        tools:layout="@layout/fragment_register_page" >
+        <action
+            android:id="@+id/action_register_page_to_verification_page"
+            app:destination="@id/verification_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/verification_page"
+        android:name="com.example.tourapp.verification_page"
+        android:label="fragment_verification_page"
+        tools:layout="@layout/fragment_verification_page" >
+        <action
+            android:id="@+id/action_verification_page_to_dashboard_page"
+            app:destination="@id/dashboard_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboard_page"
+        android:name="com.example.tourapp.dashboard_page"
+        android:label="fragment_dashboard_page"
+        tools:layout="@layout/fragment_dashboard_page" />
+    <fragment
+        android:id="@+id/login_otp_page"
+        android:name="com.example.tourapp.login_otp_page"
+        android:label="fragment_login_otp_page"
+        tools:layout="@layout/fragment_login_otp_page" />
 </navigation>
